@@ -1,0 +1,31 @@
+.map-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 20px; /* Espaciado alrededor del mapa */
+  }
+  
+  #map {
+    height: 400px;
+    width: 90%; /* El mapa ocupa el 90% del ancho del contenedor */
+    max-width: 800px; /* Limita el ancho máximo del mapa */
+    border-radius: 10px; /* Bordes redondeados para darle mejor estética */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+
+  .rounded-button {
+    width: 60%; // Usa un 80% del ancho de la página para centrarlo
+    margin: 0 auto; // Centra el botón horizontalmente
+    height: 60px; // Ajusta la altura del botón
+    font-size: 1.2rem; // Tamaño de fuente más grande
+    border-radius: 30px; // Bordes redondeados
+    --background: #3880ff; // Color de fondo
+    --color: #ffffff; // Color del texto
+    --ripple-color: #ffffff; // Color del efecto ripple
+  
+    /* Ajustes para efecto hover */
+    &:hover {
+      --background: #4c8dff; // Fondo más claro en hover
+      transition: background-color 0.3s ease;
+    }
+  }
+  

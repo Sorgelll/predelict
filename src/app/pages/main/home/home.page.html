@@ -1,0 +1,39 @@
+<app-header title="Inicio"></app-header>
+
+
+<ion-content>
+
+  <div class="d-flex-center">
+    <app-logo></app-logo>
+  </div>
+  
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <ion-button expand="block" class="rounded-button" routerLink="/ruta">
+    Generar rutas de escape
+  </ion-button>
+
+  
+
+
+</ion-content>
+
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button (click)="takeImage()"  tab="camera">
+    <ion-icon name="camera"></ion-icon>
+    <ion-label>Cámara</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button (click)="addUpdateStudnets()" tab="Asistencia">
+    <ion-icon name="list"></ion-icon>
+    <ion-label>Registro de Delito</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button (click)="signOut()" tab="logout">
+    <ion-icon name="log-out"></ion-icon>
+    <ion-label>Cerrar Sesión</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

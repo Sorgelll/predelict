@@ -1,0 +1,45 @@
+<app-header [isModal]="true" title="registro de delito"></app-header>
+<ion-content>
+    <form [formGroup]="form" class="ion-padding ion-text-center" (ngSubmit)="submit()" (keypress.enter)="submit()">
+        
+        <app-custom-input 
+        autocomplete="name" 
+        icon="person-outline" 
+        [control]="form.controls.name" 
+        type="text"
+        label="Nombre"
+        ></app-custom-input>
+
+        <app-custom-input  
+        icon="person-outline" 
+        [control]="form.controls.seccion" 
+        type="text"
+        label="apellido"
+        ></app-custom-input>
+        
+
+        <app-custom-input 
+        icon="school-outline" 
+        [control]="form.controls.carrera" 
+        type="text"
+        label="direccion del delito"
+        ></app-custom-input>
+
+        <app-custom-input 
+        icon="alarm-outline" 
+        [control]="form.controls.asignatura" 
+        type="text"
+        label="hora del delito"
+        ></app-custom-input>
+
+        
+    
+        <ion-button expand="block" mode="ios" class="submit" type="submit" [disabled]="form.invalid">
+          registrar delito 
+          <ion-icon slot="end" name="add-circle-outline"></ion-icon>
+        </ion-button>
+    
+    
+    
+        </form>
+</ion-content>
